@@ -35,9 +35,9 @@ export default function QuantumStatePanel() {
   const [activeTab, setActiveTab] = useState('bitstream');
 
   return (
-    <div className="panel-section">
-      <div className="panel-title">
-        <span className="title-icon">🔬</span>
+    <div className="viz-section">
+      <div className="viz-header">
+        <span>🔬</span>
         Quantum State & Data
       </div>
 
@@ -53,8 +53,8 @@ export default function QuantumStatePanel() {
             border: 'none',
             cursor: 'pointer',
             fontFamily: 'var(--font-sans)',
-            background: activeTab === 'bitstream' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
-            color: activeTab === 'bitstream' ? '#38bdf8' : 'var(--text-muted)',
+            background: activeTab === 'bitstream' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+            color: activeTab === 'bitstream' ? '#ffffff' : 'var(--text-muted)',
             transition: 'all 0.2s',
           }}
         >
@@ -70,8 +70,8 @@ export default function QuantumStatePanel() {
             border: 'none',
             cursor: 'pointer',
             fontFamily: 'var(--font-sans)',
-            background: activeTab === 'audit' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
-            color: activeTab === 'audit' ? '#38bdf8' : 'var(--text-muted)',
+            background: activeTab === 'audit' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+            color: activeTab === 'audit' ? '#ffffff' : 'var(--text-muted)',
             transition: 'all 0.2s',
           }}
         >
